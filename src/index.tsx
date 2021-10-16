@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {sum} from "./03/03";
+import {User} from "./06/06-callback";
+// import {SplitIntoWords} from "./01";
+
+
+var a = sum;
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <User />,
   document.getElementById('root')
 );
 
