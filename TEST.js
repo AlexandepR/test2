@@ -98,34 +98,34 @@ console.log(Object.keys(usersObj) + '  Object.keys ')
 
 
 //
-// let state = {
-//     name: 'Alex',
-//     age: 3,
-//     address: {
-//         street: 'one',
-//         city: {
-//             one: [{}, {}, {}],
-//             two: 'grodno',
-//             three: {
-//                 name: 'Alex'
-//             }
-//         }
-//     }
-// }
-// const stateCopyTwo = {
-//     ...state,
-//     address: {
-//         ...state.address,
-//         city: {
-//             ...state.address.city,
-//             one : {...state.address.city.one.map(el => ({...el})),
-//                 three: {
-//                 ...state.address.city.three
-//             }
-//             }
-//         }
-//     }
-// }
+let state = {
+    name: 'Alex',
+    age: 3,
+    address: {
+        street: 'one',
+        city: {
+            one: [{}, {}, {}],
+            two: 'grodno',
+            three: {
+                name: 'Alex'
+            }
+        }
+    }
+}
+const stateCopyTwo = {
+    ...state,
+    address: {
+        ...state.address,
+        city: {
+            ...state.address.city,
+            one : {...state.address.city.one.map(el => ({...el})),
+                three: {
+                ...state.address.city.three
+            }
+            }
+        }
+    }
+}
 //
 //
 //
